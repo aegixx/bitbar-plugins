@@ -257,7 +257,7 @@ print_remaining_time() {
 print_remaining_minutes() {
   calc_remaining_time
   if [ "$rem" -eq 0 ]; then
-    printf "&lt;1m"
+    printf "<1m"
   else
     [ "$res" -ge 30 ] && remaining="$((rem + 1))" || remaining="$rem"
     printf "%02dm" "$remaining"
